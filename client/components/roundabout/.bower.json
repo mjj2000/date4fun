@@ -1,0 +1,14 @@
+{
+  "name": "roundabout",
+  "homepage": "https://github.com/fredhq/roundabout",
+  "version": "2.4.2",
+  "_release": "2.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.4.2",
+    "commit": "d8cc98ccc0e214514cfe76fe4c1a9d8a99a50c6b"
+  },
+  "_source": "git://github.com/fredhq/roundabout.git",
+  "_target": "2.4.2",
+  "_originalSource": "roundabout"
+}

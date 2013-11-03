@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- build:css css/all.css -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+        <!-- endbuild -->
+        <title>約會趣</title>
+    </head>
+    <body>
+
+        <div data-role="page" id="pageSplash">
+            <section id="splash">
+                <div id="logo"></div>
+            </section>
+        </div>
+
+        <div data-role="page" id="pageIndex">
+            <header data-role="header" data-position="fixed">
+                <h1><div class="icon-heart"></div>約會趣</h1>
+                <a href="#" id="btnNew"
+                 data-corners="false"
+                 data-shadow="false"
+                 data-iconshadow="false"
+                 class="ui-btn-right"
+                ></a>
+            </header>
+            <div data-role="content" class="content">
+                <div class="emptyMsg">
+                    <div class="logo"></div>
+                    <div class="msg">請點選<span class="plus">+</span>新增約會行程</div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="page" id="pageSearch">
+            <header data-role="header" data-position="fixed">
+                <a href="#" id="btnBack"
+                 data-corners="false"
+                 data-shadow="false"
+                 data-iconshadow="false"
+                 data-theme=""
+                 class="ui-btn-left"
+                ></a>
+                <h1><div class="icon-heart"></div>約會趣</h1>
+            </header>
+            <div data-role="content" class="content">
+                <ul data-role="listview" data-inset="true" id="inputList" class="ui-icon-alt">
+                    <li>
+                        <a href="#relationshipMenu"
+                            data-rel="popup"
+                            data-position-to="window"
+                            data-transition="pop"
+                        >進展關係<span class="val" id="relationship"></span></a>
+                        <div id="relationshipMenu" data-role="popup" data-overlay-theme="a" data-theme="c" data-dismissible="true" class="ui-corner-all">
+                            <ul data-icon="false" data-role="listview" data-inset="true" class="ui-icon-alt"></ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#ambianceMenu"
+                            data-rel="popup"
+                            data-position-to="window"
+                            data-transition="pop"
+                        >氣氛<span class="val" id="ambiance"></span></a>
+                        <div id="ambianceMenu" data-role="popup" data-overlay-theme="a" data-theme="c" data-dismissible="true" class="ui-corner-all">
+                            <ul data-icon="false" data-role="listview" data-inset="true" class="ui-icon-alt"></ul>
+                        </div>
+                    </li>
+                    <li>時段<section id="timeRange"></section></li>
+                    <li data-icon="false" type="date">
+                        <a id="date">
+                            日期<span class="val"></span>
+                            <input id="inputDate" value="2013/10/10">
+                        </a>
+                    </li>
+                </ul>
+
+                <a id="btnGo">GO</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="pageCard">
+            <header data-role="header" data-position="fixed">
+                <a href="#" id="btnBack"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-left"
+                ></a>
+                <h1><div class="icon-heart"></div>約會卡</h1>
+                <a href="#" id="btnNext"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-right"
+                ></a>
+            </header>
+            <div data-role="content" class="content">
+                <a href="#" id="btnPrevCard"></a>
+                <ul id="cards">
+<!--                     <li class="card">
+                        <section class="action action-art">藝文活動</section>
+                        <section class="action action-meat">吃飯</section>
+                        <section class="action action-movie">看電影</section>
+                        <section></section>
+                    </li>
+ -->                </ul>
+                <a href="#" id="btnNextCard"></a>
+            </div>
+            <div class="birdBG"></div>
+        </div>
+
+
+        <div data-role="page" id="pageEdit">
+            <header data-role="header" data-position="fixed">
+                <a href="#" id="btnBack"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-left"
+                ></a>
+                <h1><div class="icon-heart"></div>行程調整</h1>
+                <a href="#" id="btnOk"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-right"
+                ></a>
+            </header>
+            <div data-role="content" class="content">
+                <section id="actions">
+<!--                     <section class="action">
+                        <section class="icon"><img class="icon-img" src="//placehold.it/100x100"></section>
+                        <section class="info">
+                            <section class="time">
+                                <span class="from">09:00</span> ~ <span class="to">12:00</span>
+                            </section>
+                            <section class="type type-art">藝文活動</section>
+                            <section class="title">紅點設計博物館主題特展</section>
+                            <section class="description">
+                                - 設計無所不在，從一只手錶 ...<br>
+                                - 全票$50、半票$30<br>
+                                - .........<br>
+                            </section>
+                        </section>
+                    </section> -->
+
+<!--                     <section class="traffic">
+                        <span class="type type-mass">搭公車</span>，約<span class="time">25分鐘</span>
+                    </section> -->
+
+
+                </section>
+            </div>
+        </div>
+
+        <div data-role="page" id="pageView">
+            <header data-role="header" data-position="fixed">
+                <a href="#" id="btnEdit"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-left"
+                ></a>
+                <h1><div class="icon-heart"></div>行程表</h1>
+                <a href="#" id="btnDone"
+                 data-corners="false" data-shadow="false" data-iconshadow="false"
+                 class="ui-btn-right"
+                >Done</a>
+            </header>
+            <div data-role="content" class="content">
+                <ul id="timeline">
+                    <li>09:00</li>
+                    <li>10:00</li>
+                    <li>11:00</li>
+                    <li>12:00</li>
+                    <li>13:00</li>
+                    <li>14:00</li>
+                    <li>15:00</li>
+                    <li>16:00</li>
+                    <li>17:00</li>
+                    <li>18:00</li>
+                    <li>19:00</li>
+                    <li>20:00</li>
+                    <li>21:00</li>
+                    <li>22:00</li>
+                    <li>23:00</li>
+                    <li>24:00</li>
+                </ul>
+                <section id="actions">
+<!--                     <section class="action">
+                        <section class="icon"><img class="icon-img" src="//placehold.it/100x100"></section>
+                        <section class="info">
+                            <section class="time">
+                                <span class="from">09:00</span> ~ <span class="to">12:00</span>
+                            </section>
+                            <section class="title type-art">紅點設計博物館主題特展</section>
+                            <section class="description">
+                                - 設計無所不在，從一只手錶 ...<br>
+                                - 全票$50、半票$30<br>
+                                - .........<br>
+                            </section>
+                        </section>
+                    </section> -->
+
+<!--                     <section class="traffic">
+                        <section class="content">
+                            <span class="type type-mass">搭公車</span>，約<span class="time">25分鐘</span>
+                        </section>
+                    </section> -->
+
+                </section>
+            </div>
+        </div>
+
+        <!--
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        -->
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="components/jquery/jquery-migrate.min.js"></script>
+        <script src="js/jqm-config.js"></script>
+        <script src="components/jquery-mobile/dist/jquery.mobile.min.js"></script>
+        <script src="components/requirejs/require.js"></script>
+        <!-- build:js js/all.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

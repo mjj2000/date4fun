@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,latin-ext);
+
+body, html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans', 'MS Serif', 'New York', sans-serif;
+  	font-weight: 400;
+  	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, label.name, caption, thead th {
+	font-weight: 300;
+}
+
+h1 {font-size: 3.00em;}
+h2 {font-size: 2.25em;}
+h3 {font-size: 1.75em;}
+h4 {font-size: 1.50em;}
+h5 {font-size: 1.25em;}
+h6 {font-size: 1.00em;}
+
+a {
+	color: #07679A;
+}
+
+header, footer {
+	padding: 0px 50px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+}
+
+footer a {
+	color: white;
+}
+
+pre {
+	background-color: #EEE;
+	padding: 1em 5em;
+}
+
+code, pre, var {
+	font-family: 'Courier New', monospace;
+}
+
+var {
+	color: orange;
+}
+
+.toc {
+	width: 300px;
+	float: right;
+	margin: 10px 20px;
+	padding: 20px;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	background-color: white;
+	position: relative;
+	top: -50px;
+}
+
+.toc h3 {
+	margin-top: 0px;
+}
+
+#body {
+	padding: 20px 50px;
+}
+
+.tip h1 {
+	font-style: normal;
+	color: silver;
+	margin: 10px 50px 20px 0px;
+	float: left;
+}
+.tip {
+	background-color: #EFEFEF;
+	border: 1px solid #AAA;
+	padding: 1em 2em;
+	font-style: italic;
+	overflow: hidden;
+}
+
+header a {
+	color: white;
+	margin: 1em;
+	text-decoration: none;
+}
+
+header {
+	padding: 2em;
+}
+#head {
+}
+#head b {
+	font-weight: 800;
+	border-right: 1px solid white;
+	padding-right: 10px;
+}

@@ -1,0 +1,27 @@
+#pageSplash {
+    background-image: image-url('bg_texture.png');
+    #splash {
+        $logo-img: 'logo.png';
+        background: image-url('launch_bg.png') 0 bottom no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        #logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: ((-1) * image-width($logo-img) / 2);
+            margin-top: ((-1) * image-height($logo-img) / 2);
+            border: 0px none transparent;
+            background-image: image-url($logo-img);
+            width: image-width($logo-img) ;
+            height: image-height($logo-img);
+            min-height: 0;
+            background-repeat: no-repeat;
+        }
+    }
+}
